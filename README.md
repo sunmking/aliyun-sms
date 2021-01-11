@@ -3,7 +3,7 @@
 ## 安装
 
 ```bash
-composer require "clyde/aliyun-sms"
+composer require "saviorlv/aliyun-sms"
 ```
 
 > or添加下列代码在composer.json文件中并执行composer update 操作
@@ -11,7 +11,7 @@ composer require "clyde/aliyun-sms"
 ```bash
 {
     "require": {
-       "clyde/aliyun-sms":"dev-master"
+       "saviorlv/aliyun-sms":"dev-master"
     }
 }
 ```

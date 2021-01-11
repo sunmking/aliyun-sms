@@ -1,5 +1,5 @@
 {
-    "name": "clyde/aliyun-sms",
+    "name": "saviorlv/aliyun-sms",
     "description": "Aliyun SMS SDK",
     "keywords": [ "aliyun", "SMS", "sdk"],
     "type": "library",
@@ -7,8 +7,8 @@
     "homepage": "https://github.com/clyde-cn/aliyun-sms",
     "authors": [
         {
-            "name": "saviorlv",
-            "homepage": "https://saviorlv.github.io/"
+            "name": "clyde-cn",
+            "homepage": "https://clyde-cn.github.io/"
         }
     ],
     "require": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "clyde\\aliyun\\": "src/"
+            "saviorlv\\aliyun\\": "src/"
         }
     }
 }
