@@ -1,0 +1,23 @@
+{
+    "name": "clyde/aliyun-sms",
+    "description": "Aliyun SMS SDK",
+    "keywords": [ "aliyun", "SMS", "sdk"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/clyde-cn/aliyun-sms",
+    "authors": [
+        {
+            "name": "saviorlv",
+            "homepage": "https://saviorlv.github.io/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "alibabacloud/client": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "clyde\\aliyun\\": "src/"
+        }
+    }
+}
