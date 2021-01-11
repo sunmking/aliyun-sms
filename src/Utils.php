@@ -6,7 +6,7 @@
  * Time: 下午13:10
  */
 
-namespace clyde\aliyun;
+namespace saviorlv\aliyun;
 
 
 class Utils

@@ -1,6 +1,6 @@
 <?php
 
-namespace clyde\aliyun;
+namespace saviorlv\aliyun;
 
 use AlibabaCloud\Client\AlibabaCloud;
 use AlibabaCloud\Client\Exception\ClientException;
@@ -148,7 +148,7 @@ class Sms
         $request['PhoneNumberJson'] = json_encode($phoneNumbers, JSON_UNESCAPED_UNICODE);
 
         // 必填，设置签名名称
-        $request['SignNameJson'] =(json_encode($signName, JSON_UNESCAPED_UNICODE);
+        $request['SignNameJson'] =json_encode($signName, JSON_UNESCAPED_UNICODE);
 
         // 必填，设置模板CODE
         $request['TemplateCode'] = $templateCode;
@@ -158,17 +158,12 @@ class Sms
             $request['TemplateParamJson'] = json_encode($templateParam, JSON_UNESCAPED_UNICODE);
         }
 
-        // 可选，设置流水号
-        if($outId) {
-            $request['OutId'] = $outId;
-        }
-
         try {
             $result = AlibabaCloud::rpc()
                     ->product('Dysmsapi')
                     // ->scheme('https') // https | http
                     ->version('2017-05-25')
-                    ->action('SendSms')
+                    ->action('SendBatchSms')
                     ->method('POST')
                     ->host('dysmsapi.aliyuncs.com')
                     ->options([
